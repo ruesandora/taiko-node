@@ -42,6 +42,7 @@ screen -S rues
 cp .env.sample .env
 nano .env
 ```
+## Bu kısıma devam etmeden önce sıfırdan metamask oluşturup token al: [link](https://twitter.com/Ruesandora0/status/1607802177036091393?s=20&t=0OJOlVuEJIoSQRYLo2x5Sw)
 
 ## Yukarıdaki komutları girince açılacak ekran görselde ki gibi.
 
