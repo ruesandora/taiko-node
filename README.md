@@ -1,4 +1,5 @@
 <h1 align="center"> Taiko </h1>
+
 ![image](https://user-images.githubusercontent.com/101149671/212496781-33a8eb3a-0ba2-497a-9f87-6185de6c1b2a.png)
 
 ## Ödül hakkında bilgi olmayan, can sıkıntısından oluşturulmuş bir repodur.
