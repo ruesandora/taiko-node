@@ -57,9 +57,9 @@ nano .env
 ![image](https://user-images.githubusercontent.com/101149671/212497188-e5480587-9872-4c0f-abf0-4f6b24839396.png)
 
 ## Node'u çalıştırın:
-
+```
 docker compose up
-
+```
 ## Node'unuz çalışıyor kolay gelsin:
 
 ![image](https://user-images.githubusercontent.com/101149671/212497350-4cebdcc6-edeb-4949-b18b-a38a83e1a53c.png)
