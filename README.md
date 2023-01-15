@@ -49,7 +49,7 @@ nano .env
 * Açıldıktan sonra yön tuşları ile en alta geliyoruz.
 * `ENABLE_PROPOSER` kısmını `true` yapıyoruz
 * `L1_PROPOSER_PRIVATE_KEY=` kısmına metamasktan private key alıyoruz (2. görsele bakın)
-* `L2_SUGGESTED_FEE_RECIPIENT=`bu kısımda `MetamaskŞifresi` olacak
+* `L2_SUGGESTED_FEE_RECIPIENT=`bu kısımda `Metamask 0x Cüzdan Adresi` olacak
 * sonra CTRL + X + Y ile çıkıyoruz.
 
 ![image](https://user-images.githubusercontent.com/101149671/212497099-2e209412-4d4f-4b1f-850a-363099001927.png)
