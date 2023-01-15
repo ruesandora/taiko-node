@@ -52,7 +52,7 @@ nano .env
 * `L2_SUGGESTED_FEE_RECIPIENT=`bu kısımda `Metamask 0x Cüzdan Adresi` olacak
 * sonra CTRL + X + Y ile çıkıyoruz.
 
-![image](https://user-images.githubusercontent.com/101149671/212497099-2e209412-4d4f-4b1f-850a-363099001927.png)
+![image](https://user-images.githubusercontent.com/76253089/212540636-32564971-d531-41f2-b2a6-ffc5ef21582c.png)
 
 * Metamasktan 3 noktaya tıklayınca hesap bilgileri kısmında olacak burası:
 ![image](https://user-images.githubusercontent.com/101149671/212497188-e5480587-9872-4c0f-abf0-4f6b24839396.png)
