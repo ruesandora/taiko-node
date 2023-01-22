@@ -7,7 +7,7 @@
 ## Gereksinimler:
 ```
 2 CPU
-4GB RAM
+6 GB RAM
 50 GB SSD
 ```
 
