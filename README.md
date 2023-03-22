@@ -101,5 +101,10 @@ docker compose up
 
 </details>
 
+<h1> Nodunuzu Kontrol etmek için </h1>
+
+```
+http://NODEIPADRESİNİZ:3000/d/L2ExecutionEngine/l2-execution-engine-overview?orgId=1&refresh=10s
+```
 
 <h2> Kaç blok bulduğunuzu görüntülemek için explorerda cüzdan adresinizi aratın https://explorer.a2.taiko.xyz/ </h2>
