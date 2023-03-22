@@ -3,7 +3,8 @@
 ![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
 
 
-## Taiko V2 Node Kurulumu, Arkadaşlar ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler.
+## Taiko V2 Node Kurulumu, Arkadaşlar ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
+
 ![image](https://user-images.githubusercontent.com/76253089/227015343-e18eb4f1-29f9-458f-b817-b0d70de9711d.png)
 
 
@@ -98,7 +99,7 @@ docker compose up
 
 ![image](https://user-images.githubusercontent.com/76253089/227013461-29711ddd-47ec-49fd-a881-2538aaa9062a.png)
 
+</details>
 
 
-
-
+<h2> Kaç blok bulduğunuzu görüntülemek için explorerda cüzdan adresinizi aratın https://explorer.a2.taiko.xyz/ </h2>
