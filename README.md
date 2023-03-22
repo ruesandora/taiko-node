@@ -3,7 +3,9 @@
 ![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
 
 
-## Ödül hakkında bilgi olmayan, can sıkıntısından oluşturulmuş bir repodur.
+## Taiko V2 Node Kurulumu, Arkadaşlar ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler.
+![image](https://user-images.githubusercontent.com/76253089/227015343-e18eb4f1-29f9-458f-b817-b0d70de9711d.png)
+
 
 ## Min Gereksinimler:
 
