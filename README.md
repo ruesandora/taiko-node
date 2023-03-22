@@ -1,15 +1,21 @@
 <h1 align="center"> Taiko </h1>
 
-![image](https://user-images.githubusercontent.com/101149671/212496781-33a8eb3a-0ba2-497a-9f87-6185de6c1b2a.png)
+![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
+
 
 ## Ödül hakkında bilgi olmayan, can sıkıntısından oluşturulmuş bir repodur.
 
-## Gereksinimler:
-```
-2 CPU
-6 GB RAM
-50 GB SSD
-```
+## Min Gereksinimler:
+
+8 CPU  <br>
+16 GB RAM <br>
+100 GB SSD <br>
+
+<details>
+
+<summary> 
+<h2> 1) Taiko Kurulum Aşaması 
+</summary> </h2>
 
 ## Kurulum:
 * Komutları tek tek girin.
@@ -34,28 +40,53 @@ cd simple-taiko-node
 ```
 ## Ayrı screende çalıştıracağız:
 ```
-screen -S rues
+screen -S taiko
 ```
+</details>
+
+<details>
+
+<summary> 
+<h2> 2) RPC oluşturma ve Taiko Nodunun ayarlarını değiştirme 
+</summary> </h2>
 
 ## İçine girip düzenlemeler yapıyoruz:
 ```
 cp .env.sample .env
 nano .env
 ```
-## Bu kısıma devam etmeden önce sıfırdan metamask oluşturup token al: [link](https://twitter.com/Ruesandora0/status/1607802177036091393?s=20&t=0OJOlVuEJIoSQRYLo2x5Sw)
+## Bu kısıma devam etmeden önce sıfırdan metamask aç ve Api key al : [link](https://dashboard.alchemy.com/)
+* Fotoğraftaki işaretlediğim yerleri takip edin. 
+
+![image](https://user-images.githubusercontent.com/76253089/227012383-fde014d1-93a5-44a9-92d0-927a565dfbb6.png)
+* İşaretlediğim yere basın ve olusturudugunuz endpointin bilgilerine erişin
+
+![image](https://user-images.githubusercontent.com/76253089/227012695-a11a9ceb-954f-40d9-971e-3e833563a10e.png)
+* Altta istenilen yerleri buradaki bilgilerini girmeniz gerekiyor.
+
+![image](https://user-images.githubusercontent.com/76253089/227012057-33d5cf2a-a028-423b-baed-44bb22793081.png)
 
 ## Yukarıdaki komutları girince açılacak ekran görselde ki gibi.
 
 * Açıldıktan sonra yön tuşları ile en alta geliyoruz.
+* `L1_ENDPOINT_HTTP= 'Bu kısıma Alchemyden aldığınız HTTPS adresini yazıyorsunuz'
+* `L1_ENDPOINT_WS= 'Bu kısıma Alchemyden aldığınız WSS adresini yazıyorsunuz'
+*  L1_PROVER_PRIVATE_KEY= 'Bu kısıma Metamask Private keyinizi yapıştırıyorsunuz' 
 * `ENABLE_PROPOSER` kısmını `true` yapıyoruz
-* `L1_PROPOSER_PRIVATE_KEY=` kısmına metamasktan private key alıyoruz (2. görsele bakın)
-* `L2_SUGGESTED_FEE_RECIPIENT=`bu kısımda `Metamask 0x Cüzdan Adresi` olacak
 * sonra CTRL + X + Y ile çıkıyoruz.
 
-![image](https://user-images.githubusercontent.com/76253089/212540636-32564971-d531-41f2-b2a6-ffc5ef21582c.png)
+![image](https://user-images.githubusercontent.com/76253089/227011508-2772d933-500d-44c0-a7b4-8749c358f32a.png)
 
 * Metamasktan 3 noktaya tıklayınca hesap bilgileri kısmında olacak burası:
 ![image](https://user-images.githubusercontent.com/101149671/212497188-e5480587-9872-4c0f-abf0-4f6b24839396.png)
+
+</details>
+
+<details>
+
+<summary> 
+<h2> 3) Node Çalıştırma / Diğer Komutlar
+</summary> </h2>
 
 ## Node'u çalıştırın:
 ```
@@ -63,9 +94,9 @@ docker compose up
 ```
 ## Node'unuz çalışıyor kolay gelsin:
 
-![image](https://user-images.githubusercontent.com/101149671/212497350-4cebdcc6-edeb-4949-b18b-a38a83e1a53c.png)
+![image](https://user-images.githubusercontent.com/76253089/227013461-29711ddd-47ec-49fd-a881-2538aaa9062a.png)
 
-## Taiko yatırımını açıklamamış projelerden birisidir.
+
 
 
 
