@@ -91,6 +91,9 @@ nano .env
 <h2> 3) Node Çalıştırma / Diğer Komutlar
 </summary> </h2>
 
+## Nodu çalıştırmak için Sepolia Ethye ihtiyacımız olacak. <br>
+Faucet Linki https://sepoliafaucet.com/
+  
 ## Node'u çalıştırın:
 ```
 docker compose up
