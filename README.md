@@ -58,6 +58,7 @@ screen -S taiko
 
 ## İçine girip düzenlemeler yapıyoruz:
 ```
+cd simple-taiko-node
 cp .env.sample .env
 nano .env
 ```
