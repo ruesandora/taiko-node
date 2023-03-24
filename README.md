@@ -10,7 +10,7 @@
 
 ## Min Gereksinimler:
 
-8 CPU  <br>
+16 - 32  CPU  <br>
 32 GB RAM <br>
 100 GB SSD <br>
 
