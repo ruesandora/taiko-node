@@ -10,6 +10,7 @@
 
 ## Min Gereksinimler:
 
+Prover Olmak için Sistem Gereksinimleri
 16 - 32  CPU  <br>
 32 GB RAM <br>
 100 GB SSD <br>
