@@ -3,7 +3,7 @@
 ![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
 
 
-## Taiko V2 Node & Prover Kurulumu, Arkadaşlar Provlerlara ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
+## Taiko V2 Node & Prover Kurulumu, Arkadaşlar Provlerlara ödül olarak 50k$ ayırmışlar Sadece Node kuranlara herhangi bir ödülden bahsedilmemiş. Kurmadan önce ekibin açıklamasını okumanızı öneririm. Proverlar için Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
 
 ![image](https://user-images.githubusercontent.com/76253089/227015343-e18eb4f1-29f9-458f-b817-b0d70de9711d.png)
 
@@ -17,7 +17,7 @@
 
 <h2>Node Kurmak İçin Sistem Gereksinimleri </h2>
 2 CPU  <br>
-4-6 GB RAM <br>
+4 GB RAM <br>
 100 GB SSD <br>
 
 
