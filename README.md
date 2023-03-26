@@ -3,17 +3,23 @@
 ![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
 
 
-## Taiko V2 Node Kurulumu, Arkadaşlar ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
+## Taiko V2 Node & Prover Kurulumu, Arkadaşlar Provlerlara ödül olarak 50k$ ayırmışlar fakat kurmadan önce ekibin açıklamasını okumanızı öneririm. Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
 
 ![image](https://user-images.githubusercontent.com/76253089/227015343-e18eb4f1-29f9-458f-b817-b0d70de9711d.png)
 
 
 ## Min Gereksinimler:
 
-Prover Olmak için Sistem Gereksinimleri
+<h2> Prover Olmak için Sistem Gereksinimleri </h2>
 16 - 32  CPU  <br>
 32 GB RAM <br>
 100 GB SSD <br>
+
+<h2>Node Kurmak İçin Sistem Gereksinimleri </h2>
+2 CPU  <br>
+4-6 GB RAM <br>
+100 GB SSD <br>
+
 
 <details>
 
@@ -40,7 +46,7 @@ apt install git
 sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin
 ```
 
-## Klonluyoruz repoyu
+## Repoyu Klonluıyoruz.
 ```
 git clone https://github.com/taikoxyz/simple-taiko-node.git
 cd simple-taiko-node
@@ -74,13 +80,13 @@ nano .env
 
 ![image](https://user-images.githubusercontent.com/76253089/227012057-33d5cf2a-a028-423b-baed-44bb22793081.png)
 
-## Yukarıdaki komutları girince açılacak ekran görselde ki gibi.
+## Yukarıdaki komutları girince açılacak ekran görselde ki gibi. PROVER OLMAK İSTEMİYORSANIZ ENABLE PROPOSER KISMINA DOKUNMAYIN. SADECE PROVER OLMAK İSTEYENLER TRUE OLARAK DEĞİŞTİRSİN.
 
 * Açıldıktan sonra yön tuşları ile en alta geliyoruz.
 * `L1_ENDPOINT_HTTP= 'Bu kısıma Alchemyden aldığınız HTTPS adresini yazıyorsunuz'
 * `L1_ENDPOINT_WS= 'Bu kısıma Alchemyden aldığınız WSS adresini yazıyorsunuz'
 *  L1_PROVER_PRIVATE_KEY= 'Bu kısıma Metamask Private keyinizi yapıştırıyorsunuz' 
-* `ENABLE_PROPOSER` kısmını `true` yapıyoruz
+* `ENABLE_PROPOSER` kısmını `true` yapıyoruz (Prover olmak istiyorsanız true yapın min gereksinim 16-32 cpu / 32gb ram)
 * sonra CTRL + X + Y ile çıkıyoruz.
 
 ![image](https://user-images.githubusercontent.com/76253089/227011508-2772d933-500d-44c0-a7b4-8749c358f32a.png)
