@@ -122,3 +122,6 @@ http://NODEIPADRESİNİZ:3000/d/L2ExecutionEngine/l2-execution-engine-overview?o
 ```
 
 <h2> Kaç blok bulduğunuzu görüntülemek için explorerda cüzdan adresinizi aratın https://explorer.a2.taiko.xyz/ </h2>
+
+## TAİKO KONTRAT VE DAPP GÖREVLERİ İÇİN AŞAĞIDAKİ MAKALEYİ OKUMAYA DEVAM EDİN.
+https://github.com/enzifiri/taiko-deploy-contract/blob/main/README.md
