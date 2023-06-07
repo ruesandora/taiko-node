@@ -1,127 +1,71 @@
 <h1 align="center"> Taiko </h1>
 
-![photo_2023-03-22_20-42-23](https://user-images.githubusercontent.com/76253089/227009924-94c54223-e7fb-4844-a9f2-00f95c400942.jpg)
 
+<h1 align="center"> Donanım </h1>
 
-## Taiko V2 Node & Prover Kurulumu, Arkadaşlar Provlerlara ödül olarak 50k$ ayırmışlar Sadece Node kuranlara herhangi bir ödülden bahsedilmemiş. Kurmadan önce ekibin açıklamasını okumanızı öneririm. Proverlar için Sunucunun maliyeti fazla olacak, ekipte bunun farkında hedef olarak maliyetlerinizin %10 üstü vermeyi amaçlıyorlar çok fazla detay vermemişler. [Makaleyi okumak isterseniz](https://mirror.xyz/labs.taiko.eth/A6G6TNN-CXDAhl42k_bNHg_20fyGcT0xH-LBBSOPNzU) <br>
-
-![image](https://user-images.githubusercontent.com/76253089/227015343-e18eb4f1-29f9-458f-b817-b0d70de9711d.png)
-
-
-## Min Gereksinimler:
-
-<h2> Prover Olmak için Sistem Gereksinimleri </h2>
-16 - 32  CPU  <br>
-32 GB RAM <br>
-100 GB SSD <br>
-
-<h2>Node Kurmak İçin Sistem Gereksinimleri </h2>
-2 CPU  <br>
-4 GB RAM <br>
-100 GB SSD <br>
-
-
-<details>
-
-<summary> 
-<h2> 1) Taiko Kurulum Aşaması 
-</summary> </h2>
-
-## Kurulum:
-* Komutları tek tek girin.
+> Hetzner'i 3$ sunucuyu kullandım. [Link](https://github.com/ruesandora/Hetzner)
 
 ```
+2 CPU 
+4 GB RAM 
+50 GB SSD 
+```
+
+<h1 align="center"> Kurulum </h1>
+
+```sh
+# Komutları tek tek girelim.
 sudo apt update 
-```
-```
 sudo apt upgrade
-```
-```
 apt install docker-compose
-```
-```
 apt install git
-```
-```
 sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin
-```
 
-## Repoyu Klonluıyoruz.
-```
+# Repoyu klonlayıp dizine girelim.
 git clone https://github.com/taikoxyz/simple-taiko-node.git
 cd simple-taiko-node
-```
-## Ayrı screende çalıştıracağız:
-```
+
+#Ayrı screende çalıştıracağız:
 screen -S taiko
 ```
-</details>
 
-<details>
+<h1 align="center"> Dikkat edilmesi gereken nokta </h1>
 
-<summary> 
-<h2> 2) RPC oluşturma ve Taiko Nodunun ayarlarını değiştirme 
-</summary> </h2>
+> Alchemy hesabımdan taiko için bir dApp oluşturdum.
+>> Bu dApp, Ethereum - Sepolia zinciri olacak.
 
-## İçine girip düzenlemeler yapıyoruz:
-```
+![image](https://github.com/ruesandora/taiko-node/assets/101149671/30056a24-6387-4f62-9665-e5a72853d7bb)
+
+> Daha sonra View key kısmından key bilgilerimi aldım:
+
+![image](https://github.com/ruesandora/taiko-node/assets/101149671/74c21010-a0e0-446c-a45f-d1b200ddded4)
+
+> Altta ki komutlar ile `.env` içine girdim.
+
+```sh
 cd simple-taiko-node
 cp .env.sample .env
 nano .env
 ```
-## Bu kısıma devam etmeden önce sıfırdan metamask aç ve Api key al : [link](https://dashboard.alchemy.com/)
-* Fotoğraftaki işaretlediğim yerleri takip edin. 
 
-![image](https://user-images.githubusercontent.com/76253089/227012383-fde014d1-93a5-44a9-92d0-927a565dfbb6.png)
-* İşaretlediğim yere basın ve olusturudugunuz endpointin bilgilerine erişin
+> L1_ENDPOINT_HTTP= Bu kısıma Alchemyden aldığınız HTTPS adresini yazıyorsunuz
 
-![image](https://user-images.githubusercontent.com/76253089/227012695-a11a9ceb-954f-40d9-971e-3e833563a10e.png)
-* Altta istenilen yerleri buradaki bilgilerini girmeniz gerekiyor.
+> L1_ENDPOINT_WS= Bu kısıma Alchemyden aldığınız WSS adresini yazıyorsunuz
 
-![image](https://user-images.githubusercontent.com/76253089/227012057-33d5cf2a-a028-423b-baed-44bb22793081.png)
+> L1_PROVER_PRIVATE_KEY= Bu kısıma Metamask Private keyinizi yapıştırıyorsunuz
 
-## Yukarıdaki komutları girince açılacak ekran görselde ki gibi. PROVER OLMAK İSTEMİYORSANIZ ENABLE PROPOSER KISMINA DOKUNMAYIN. SADECE PROVER OLMAK İSTEYENLER TRUE OLARAK DEĞİŞTİRSİN.
+> CTRL X Y ile çıkıyoruz.
 
-* Açıldıktan sonra yön tuşları ile en alta geliyoruz.
-* `L1_ENDPOINT_HTTP= 'Bu kısıma Alchemyden aldığınız HTTPS adresini yazıyorsunuz'
-* `L1_ENDPOINT_WS= 'Bu kısıma Alchemyden aldığınız WSS adresini yazıyorsunuz'
-*  L1_PROVER_PRIVATE_KEY= 'Bu kısıma Metamask Private keyinizi yapıştırıyorsunuz' 
-* `ENABLE_PROPOSER` kısmını `true` yapıyoruz (Prover olmak istiyorsanız true yapın min gereksinim 16-32 cpu / 32gb ram)
-* sonra CTRL + X + Y ile çıkıyoruz.
+![image](https://github.com/ruesandora/taiko-node/assets/101149671/fd9a8b10-5da1-4598-9f0e-4dec72c8b835)
 
-![image](https://user-images.githubusercontent.com/76253089/227011508-2772d933-500d-44c0-a7b4-8749c358f32a.png)
+<h1 align="center"> Node'u çalıştırma </h1>
 
-* Metamasktan 3 noktaya tıklayınca hesap bilgileri kısmında olacak burası:
-![image](https://user-images.githubusercontent.com/101149671/212497188-e5480587-9872-4c0f-abf0-4f6b24839396.png)
-
-</details>
-
-<details>
-
-<summary> 
-<h2> 3) Node Çalıştırma / Diğer Komutlar
-</summary> </h2>
-
-## Nodu çalıştırmak için Sepolia Ethye ihtiyacımız olacak. <br>
-Faucet Linki https://sepoliafaucet.com/
-  
-## Node'u çalıştırın:
-```
+> Faucet Linki https://sepoliafaucet.com/
+ 
+``` 
+# Node'u çalıştırın
 docker compose up
 ```
-## Node'unuz çalışıyor kolay gelsin:
+![image](https://github.com/ruesandora/taiko-node/assets/101149671/a7f550ea-e83a-4b66-904f-ea44a731bf41)
 
-![image](https://user-images.githubusercontent.com/76253089/227013461-29711ddd-47ec-49fd-a881-2538aaa9062a.png)
 
-</details>
-
-<h1> Nodunuzu Kontrol etmek için </h1>
-
-```
-http://NODEIPADRESİNİZ:3000/d/L2ExecutionEngine/l2-execution-engine-overview?orgId=1&refresh=10s
-```
-
-<h2> Kaç blok bulduğunuzu görüntülemek için explorerda cüzdan adresinizi aratın https://explorer.a2.taiko.xyz/ </h2>
-
-## TAİKO KONTRAT  GÖREVİ İÇİN AŞAĞIDAKİ MAKALEYİ OKUMAYA DEVAM EDİN.
-https://github.com/enzifiri/taiko-deploy-contract/blob/main/README.md
