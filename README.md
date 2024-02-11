@@ -1,4 +1,4 @@
-<h1 align="center"> Taiko </h1>
+<h1 align="center"> Taiko Katla Alpha-6 Node </h1>
 
 
 <h1 align="center"> Donanım </h1>
@@ -31,9 +31,9 @@ screen -S taiko
 
 <h1 align="center"> Dikkat edilmesi gereken nokta </h1>
 
-> Alchemy hesabımdan taiko için bir dApp oluşturdum.
->> Bu dApp, Ethereum - Sepolia zinciri olacak.
-
+> Blockpi hesabımdan taiko için bir dApp oluşturdum.
+>> Bu dApp, Ethereum - Holesky zinciri olacak.
+>>>[Link](https://blockpi.io/)
 ![image](https://github.com/ruesandora/taiko-node/assets/101149671/30056a24-6387-4f62-9665-e5a72853d7bb)
 
 > Daha sonra View key kısmından key bilgilerimi aldım:
@@ -48,9 +48,9 @@ cp .env.sample .env
 nano .env
 ```
 
-> L1_ENDPOINT_HTTP= Bu kısıma Alchemyden aldığınız HTTPS adresini yazıyorsunuz
+> L1_ENDPOINT_HTTP= Bu kısıma Blockpi'den aldığınız HTTPS adresini yazıyorsunuz
 
-> L1_ENDPOINT_WS= Bu kısıma Alchemyden aldığınız WSS adresini yazıyorsunuz
+> L1_ENDPOINT_WS= Bu kısıma Blockpi'den aldığınız WSS adresini yazıyorsunuz
 
 > L1_PROVER_PRIVATE_KEY= Bu kısıma Metamask Private keyinizi yapıştırıyorsunuz
 
@@ -60,7 +60,7 @@ nano .env
 
 <h1 align="center"> Node'u çalıştırma </h1>
 
-> Faucet Linki https://sepoliafaucet.com/
+> Faucet Linki [Holesky](https://faucetlink.to/holesky)
  
 ``` 
 # Node'u çalıştırın
